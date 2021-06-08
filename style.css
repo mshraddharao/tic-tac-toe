@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body {
+    background-color: #eafa5d;
+    color: blue;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.main {
+    overflow: hidden;
+    width: 70%;
+    height: 50%;
+}
+
+.main div .container {
+    background: #ec84de;
+    margin-left: 15%;
+    margin-top: -50%;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    width: 60%;
+    height: 570;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.title span {
+    color: #9400D3;
+}
+
+.xScore {
+    display: inline;
+    position: relative;
+    margin-top: 2%;
+    color: blue;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 54%;
+}
+
+.oScore {
+    display: inline;
+    position: relative;
+    margin-top: 2%;
+    color: #9400D3;
+    width: 50%;
+}
+
+.work {
+    display: flex;
+    margin-top: 0%;
+    font-size: 90%;
+    justify-content: space-around;
+    height: 30px;
+    width: 120%;
+    margin-bottom: 5%;
+}
+
+.next span {
+    color: #9400D3;
+}
+
+.reset {
+    cursor: pointer;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.reset:hover {
+    color: #9400D3;
+}
+
+.new {
+    cursor: pointer;
+    margin-top: 0%;
+    font-size: 90%;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    color: burlywood;
+    border: none;
+    margin-left: 8%;
+    margin-right: 12%;
+    padding-top: 4px;
+    /* margin-left: 25%; */
+    height: 30px;
+    width: 268%;
+}
+
+.new:hover {
+    color: #9400D3;
+}
+
+.game-grid {
+    background: #FF00FF;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1%;
+    margin-top: 2%;
+    height: 391px;
+}
+
+.game-cell {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    cursor: pointer;
+    background: #ec84de;
+}
+
+.x,
+.o {
+    cursor: default;
+}
+
+.x::before {
+    content: 'x';
+    font-size: 370%;
+}
+
+.o::before {
+    content: 'o';
+    color: #9400D3;
+    font-size: 370%;
+}
+
+.won::before {
+    color: green;
+}
+
+.tie::before {
+    color: red;
+}
+
+@media screen and (max-width:1250px) {
+    .main container{
+        width: 40%;
+        margin-left: 0px;
+    }
+}
